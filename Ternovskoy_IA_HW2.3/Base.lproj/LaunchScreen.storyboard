@@ -24,8 +24,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Ternovsloy I.A." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-gM-Alx">
-                                        <rect key="frame" x="34.5" y="64" width="137.5" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Ternovskoy I.A." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-gM-Alx">
+                                        <rect key="frame" x="31.5" y="64" width="143" height="42"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.74342831850000002" green="1" blue="0.99061336330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.10626496088736348" green="0.85433277132471264" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="jJz-2c-TCU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gth-tu-jBv"/>
                             <constraint firstItem="jJz-2c-TCU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tj2-fd-sxs"/>

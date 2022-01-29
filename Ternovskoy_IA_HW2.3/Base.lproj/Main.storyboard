@@ -79,7 +79,6 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.74342831845036605" green="1" blue="0.99061336327942728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4q-Bm-zg8" secondAttribute="trailing" constant="29" id="2mN-iu-ejI"/>
                             <constraint firstItem="C4q-Bm-zg8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="93O-LG-OSP"/>
@@ -88,7 +87,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="34f-ti-wys" id="lQd-Me-LQp"/>
                         <outlet property="passwordTF" destination="7CF-Se-WCj" id="dTt-Q5-52I"/>
                         <outlet property="userTF" destination="4tX-Gh-9MA" id="aY7-WU-oJh"/>
                     </connections>
@@ -136,7 +134,6 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jr7-fL-mWV"/>
-                        <color key="backgroundColor" red="0.73511262576262171" green="1" blue="0.99063580574973298" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="JkP-W8-mhR" firstAttribute="centerX" secondItem="vkA-Qa-mht" secondAttribute="centerX" id="4au-20-aGy"/>
                             <constraint firstItem="w5W-L4-DVf" firstAttribute="centerX" secondItem="vkA-Qa-mht" secondAttribute="centerX" id="5xx-Z1-Ncq"/>

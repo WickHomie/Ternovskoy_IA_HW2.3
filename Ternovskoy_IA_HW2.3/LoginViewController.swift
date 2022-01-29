@@ -11,7 +11,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var userTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
-    @IBOutlet var loginButton: UIButton!
+    
+    let topColor = UIColor(displayP3Red: 0, green: 80 / 100, blue: 100, alpha: 1)
+    let bottomColor = UIColor(displayP3Red: 100, green: 100, blue: 100, alpha: 1)
         
     class User {
         var userName: String
@@ -25,6 +27,11 @@ class LoginViewController: UIViewController {
     
     let userOne = User(userName: "User", password: "SwiftBook")
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addGradientColor(topColor: topColor, bottomColor: bottomColor)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.labelValue = userOne.userName
@@ -37,7 +44,8 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginButtonPressed() {
         if userTF.text != userOne.userName || passwordTF.text != userOne.password {
-            showAlert(with: "Invalid login or password", and: "Please, enter correct login and password")
+            showAlert(with: "Invalid login or password",
+                      and: "Please, enter correct login and password")
         }
     }
     
@@ -51,7 +59,7 @@ class LoginViewController: UIViewController {
     
 }
 
-// - MARK: - Private methods
+// - MARK: - extension
 extension LoginViewController {
     private func showAlert(with title: String, and message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

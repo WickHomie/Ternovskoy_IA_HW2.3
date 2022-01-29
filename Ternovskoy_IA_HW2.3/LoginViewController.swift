@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    let userOne = User(userName: "Eugenya", password: "SwiftBook")
+    let userOne = User(userName: "User", password: "SwiftBook")
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }

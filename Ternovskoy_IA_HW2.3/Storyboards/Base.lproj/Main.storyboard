@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Ternovskoy_IA_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="C4q-Bm-zg8">
-                                <rect key="frame" x="29" y="166" width="262" height="196"/>
+                                <rect key="frame" x="29" y="330" width="356" height="196"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="3bo-LA-dXN">
-                                        <rect key="frame" x="0.0" y="0.0" width="262" height="87"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="87"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tX-Gh-9MA">
-                                                <rect key="frame" x="0.0" y="0.0" width="262" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                                 <connections>
@@ -31,7 +31,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7CF-Se-WCj">
-                                                <rect key="frame" x="0.0" y="53" width="262" height="34"/>
+                                                <rect key="frame" x="0.0" y="53" width="356" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                                 <connections>
@@ -41,18 +41,18 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34f-ti-wys">
-                                        <rect key="frame" x="0.0" y="108" width="262" height="40"/>
+                                        <rect key="frame" x="0.0" y="108" width="356" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="tintColor" red="0.082130636511387453" green="0.26383521999246751" blue="0.5878866526238431" alpha="0.7830056316754761" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="loginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSW-5S-2S2"/>
-                                            <segue destination="SxU-lx-r4k" kind="show" identifier="welcomeVC" id="y1m-hc-UO9"/>
+                                            <segue destination="SxU-lx-r4k" kind="presentation" identifier="welcomeVC" id="y1m-hc-UO9"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="Wf2-if-XzC">
-                                        <rect key="frame" x="0.0" y="169" width="262" height="27"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Wf2-if-XzC">
+                                        <rect key="frame" x="0.0" y="169" width="356" height="27"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8K-xp-iAy">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="27"/>
@@ -65,7 +65,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueG-wd-wfj">
-                                                <rect key="frame" x="161" y="0.0" width="101" height="27"/>
+                                                <rect key="frame" x="255" y="0.0" width="101" height="27"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="tintColor" red="0.082130636509999994" green="0.26383521999999998" blue="0.58788665259999995" alpha="0.78300563170000004" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -102,11 +102,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="SxU-lx-r4k" customClass="WelcomeViewController" customModule="Ternovskoy_IA_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vkA-Qa-mht">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5W-L4-DVf">
-                                <rect key="frame" x="-11.5" y="123" width="343" height="42"/>
+                                <rect key="frame" x="35.5" y="167" width="343" height="42"/>
                                 <color key="tintColor" red="0.14151314719999999" green="0.38464639719999999" blue="0.44312759969999999" alpha="0.6276782326" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="3dN-Sl-XyP"/>
@@ -117,13 +117,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkP-W8-mhR">
-                                <rect key="frame" x="137" y="211" width="46" height="49"/>
+                                <rect key="frame" x="184" y="255" width="46" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OY-y8-Zaa">
-                                <rect key="frame" x="126.5" y="430" width="67" height="31"/>
+                                <rect key="frame" x="173.5" y="724" width="67" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="u56-mo-pqx"/>
                                 </constraints>
@@ -155,6 +155,21 @@
                 <exit id="t4L-oz-nHy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="730.39999999999998" y="79.610194902548727"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ddE-IQ-h6l">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FA2-M1-8pE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="XH6-ZB-ntp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YOI-Es-Rq9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="A9r-qe-sl7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1475" y="79"/>
         </scene>
     </scenes>
     <resources>

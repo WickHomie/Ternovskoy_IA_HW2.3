@@ -58,16 +58,48 @@
 		3155048D27A3DB850005FD04 /* Ternovskoy_IA_HW2.3 */ = {
 			isa = PBXGroup;
 			children = (
-				3155048E27A3DB850005FD04 /* AppDelegate.swift */,
-				3155049027A3DB850005FD04 /* SceneDelegate.swift */,
-				3155049227A3DB850005FD04 /* LoginViewController.swift */,
-				3155049427A3DB850005FD04 /* Main.storyboard */,
-				315504A227A3ED3B0005FD04 /* WelcomeViewController.swift */,
-				3155049727A3DB870005FD04 /* Assets.xcassets */,
-				3155049927A3DB870005FD04 /* LaunchScreen.storyboard */,
-				3155049C27A3DB870005FD04 /* Info.plist */,
+				31C69C6027A6DBA4001DF294 /* View Controllers */,
+				31C69C6227A6DC2A001DF294 /* Storyboards */,
+				31C69C6127A6DBEF001DF294 /* App */,
+				31C69C6327A6DC59001DF294 /* Resourses */,
 			);
 			path = Ternovskoy_IA_HW2.3;
+			sourceTree = "<group>";
+		};
+		31C69C6027A6DBA4001DF294 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3155049227A3DB850005FD04 /* LoginViewController.swift */,
+				315504A227A3ED3B0005FD04 /* WelcomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		31C69C6127A6DBEF001DF294 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3155048E27A3DB850005FD04 /* AppDelegate.swift */,
+				3155049027A3DB850005FD04 /* SceneDelegate.swift */,
+				3155049C27A3DB870005FD04 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		31C69C6227A6DC2A001DF294 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3155049427A3DB850005FD04 /* Main.storyboard */,
+				3155049927A3DB870005FD04 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		31C69C6327A6DC59001DF294 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				3155049727A3DB870005FD04 /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XD73DA4KZ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Ternovskoy_IA_HW2.3/Info.plist;
+				INFOPLIST_FILE = Ternovskoy_IA_HW2.3/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XD73DA4KZ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Ternovskoy_IA_HW2.3/Info.plist;
+				INFOPLIST_FILE = Ternovskoy_IA_HW2.3/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

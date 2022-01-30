@@ -13,8 +13,8 @@ class WelcomeViewController: UIViewController {
     
     var labelValue = ""
     
-    let topColor = UIColor(displayP3Red: 0, green: 70 / 100, blue: 100, alpha: 1)
-    let bottomColor = UIColor(displayP3Red: 100, green: 100, blue: 100, alpha: 1)
+    private let topColor = UIColor(displayP3Red: 0, green: 50 / 100, blue: 100, alpha: 1)
+    private let bottomColor = UIColor(displayP3Red: 100, green: 100, blue: 100, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()

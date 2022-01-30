@@ -12,20 +12,11 @@ class LoginViewController: UIViewController {
     @IBOutlet var userTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    let topColor = UIColor(displayP3Red: 0, green: 80 / 100, blue: 100, alpha: 1)
-    let bottomColor = UIColor(displayP3Red: 100, green: 100, blue: 100, alpha: 1)
-        
-    class User {
-        var userName: String
-        var password: String
-        
-        init(userName: String, password: String) {
-            self.userName = userName
-            self.password = password
-        }
-    }
-    
-    let userOne = User(userName: "User", password: "SwiftBook")
+    private let topColor = UIColor(displayP3Red: 0, green: 80 / 100, blue: 100, alpha: 1)
+    private let bottomColor = UIColor(displayP3Red: 100, green: 100, blue: 100, alpha: 1)
+            
+    private let userOne = "User"
+    private let password = "Password"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +25,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.labelValue = userOne.userName
+        welcomeVC.labelValue = userOne
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -43,18 +34,18 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed() {
-        if userTF.text != userOne.userName || passwordTF.text != userOne.password {
+        if userTF.text != userOne || passwordTF.text != password{
             showAlert(with: "Invalid login or password",
                       and: "Please, enter correct login and password")
         }
     }
     
     @IBAction func showUserName() {
-        showAlert(with: "Oops! 😱", and: "Your name is \(userOne.userName)")
+        showAlert(with: "Oops! 😱", and: "Your name is \(userOne)")
     }
     
     @IBAction func showPassword() {
-        showAlert(with: "Oops! 😱", and: "Your password is \(userOne.password)")
+        showAlert(with: "Oops! 😱", and: "Your password is \(password)")
     }
     
 }

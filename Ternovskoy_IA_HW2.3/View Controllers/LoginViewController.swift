@@ -15,8 +15,7 @@ class LoginViewController: UIViewController {
     private let topColor = UIColor(displayP3Red: 0, green: 80 / 100, blue: 100, alpha: 1)
     private let bottomColor = UIColor(displayP3Red: 100, green: 100, blue: 100, alpha: 1)
             
-    private let userOne = "User"
-    private let password = "Password"
+    private let userOne = User.getUserInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +23,17 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.labelValue = userOne
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.labelValue = userOne.person.userFullName
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutUserVC = navigationVC.topViewController as! AboutMeViewController
+                aboutUserVC.user = userOne
+            }
+        }
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -34,18 +42,18 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed() {
-        if userTF.text != userOne || passwordTF.text != password{
+        if userTF.text != userOne.login || passwordTF.text != userOne.password{
             showAlert(with: "Invalid login or password",
                       and: "Please, enter correct login and password")
         }
     }
     
     @IBAction func showUserName() {
-        showAlert(with: "Oops! 😱", and: "Your name is \(userOne)")
+        showAlert(with: "Oops! 😱", and: "Your name is \(userOne.login)")
     }
     
     @IBAction func showPassword() {
-        showAlert(with: "Oops! 😱", and: "Your password is \(password)")
+        showAlert(with: "Oops! 😱", and: "Your password is \(userOne.password)")
     }
     
 }

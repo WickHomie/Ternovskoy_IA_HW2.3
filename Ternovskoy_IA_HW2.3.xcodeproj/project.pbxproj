@@ -14,6 +14,10 @@
 		3155049827A3DB870005FD04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3155049727A3DB870005FD04 /* Assets.xcassets */; };
 		3155049B27A3DB870005FD04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3155049927A3DB870005FD04 /* LaunchScreen.storyboard */; };
 		315504A327A3ED3B0005FD04 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315504A227A3ED3B0005FD04 /* WelcomeViewController.swift */; };
+		31B04BB827A80FD90038A0CA /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B04BB727A80FD90038A0CA /* Gradient.swift */; };
+		31B04BBB27A826590038A0CA /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B04BBA27A826580038A0CA /* PersonalInfoViewController.swift */; };
+		31C69C6527A7DF8F001DF294 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C69C6427A7DF8F001DF294 /* AboutMeViewController.swift */; };
+		31C69C6827A7E280001DF294 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C69C6727A7E280001DF294 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		3155049A27A3DB870005FD04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3155049C27A3DB870005FD04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315504A227A3ED3B0005FD04 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		31B04BB727A80FD90038A0CA /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		31B04BBA27A826580038A0CA /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		31C69C6427A7DF8F001DF294 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		31C69C6727A7E280001DF294 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +68,20 @@
 			children = (
 				31C69C6027A6DBA4001DF294 /* View Controllers */,
 				31C69C6227A6DC2A001DF294 /* Storyboards */,
+				31C69C6927A7E286001DF294 /* Models */,
+				31B04BB927A810030038A0CA /* Custom */,
 				31C69C6127A6DBEF001DF294 /* App */,
 				31C69C6327A6DC59001DF294 /* Resourses */,
 			);
 			path = Ternovskoy_IA_HW2.3;
+			sourceTree = "<group>";
+		};
+		31B04BB927A810030038A0CA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				31B04BB727A80FD90038A0CA /* Gradient.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		31C69C6027A6DBA4001DF294 /* View Controllers */ = {
@@ -71,6 +89,8 @@
 			children = (
 				3155049227A3DB850005FD04 /* LoginViewController.swift */,
 				315504A227A3ED3B0005FD04 /* WelcomeViewController.swift */,
+				31C69C6427A7DF8F001DF294 /* AboutMeViewController.swift */,
+				31B04BBA27A826580038A0CA /* PersonalInfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -100,6 +120,14 @@
 				3155049727A3DB870005FD04 /* Assets.xcassets */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		31C69C6927A7E286001DF294 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31C69C6727A7E280001DF294 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3155049327A3DB850005FD04 /* LoginViewController.swift in Sources */,
+				31C69C6527A7DF8F001DF294 /* AboutMeViewController.swift in Sources */,
+				31C69C6827A7E280001DF294 /* User.swift in Sources */,
+				31B04BB827A80FD90038A0CA /* Gradient.swift in Sources */,
+				31B04BBB27A826590038A0CA /* PersonalInfoViewController.swift in Sources */,
 				315504A327A3ED3B0005FD04 /* WelcomeViewController.swift in Sources */,
 				3155048F27A3DB850005FD04 /* AppDelegate.swift in Sources */,
 				3155049127A3DB850005FD04 /* SceneDelegate.swift in Sources */,
